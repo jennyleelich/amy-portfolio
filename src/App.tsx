@@ -6,6 +6,8 @@ import Works from "./components/Works/Works";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
+import PaintingDetail1 from "./components/Paintings/PaintingDetail1";
+import Paintings from "./components/Paintings/Paintings";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/works/paintings" element={<Paintings />} />
+        <Route path="/works/painting/1" element={<PaintingDetail1 />} />
       </Routes>
     </section>
   );

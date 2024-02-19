@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './Works.css';
 const Works = () => {
     return (
@@ -9,8 +10,8 @@ const Works = () => {
               </div>
             </div>
             <div className="row">
-              
-              <a className="work-item padd-15" href="#painting">
+           
+              <NavLink className="work-item padd-15" to="/works/paintings">
                 <div className="work-item-inner">
                   <img
                     src="src/assets/oneeyelookdownatu 2.jpg"
@@ -19,7 +20,7 @@ const Works = () => {
                   />
                 </div>
                 <h4>Paintings</h4>
-              </a>
+              </NavLink>
               
               
               <a className="work-item padd-15" href="#scrlpture">
