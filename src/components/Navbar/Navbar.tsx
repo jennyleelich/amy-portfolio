@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../../assets/Logo.jpg";
-import { SlArrowDown,SlArrowUp } from "react-icons/sl";
 import { IoMdClose,IoMdMenu } from "react-icons/io";
 
 
