@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import PaintingDetail1 from "./components/Paintings/PaintingDetail1";
 import Paintings from "./components/Paintings/Paintings";
+import PaintingDetail2 from "./components/Paintings/PaintingDetail2";
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
         <Route path="/works/paintings" element={<Paintings />} />
-        <Route path="/works/painting/1" element={<PaintingDetail1 />} />
+        <Route path="/works/paintings/blackeye" element={<PaintingDetail1 />} />
+        <Route path="/works/paintings/desertspirit" element={<PaintingDetail2 />} />
       </Routes>
     </section>
   );

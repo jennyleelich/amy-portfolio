@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import "./PaintingDetail1.css";
+import "./PaintingDetail2.css";
 
-const PaintingDetail1 = () => {
+const PaintingDetail2 = () => {
   return (
     <section className="work section" id="painting-blackeye">
       <div className="container">
@@ -68,4 +68,4 @@ const PaintingDetail1 = () => {
   );
 };
 
-export default PaintingDetail1;
+export default PaintingDetail2;

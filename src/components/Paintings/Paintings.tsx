@@ -1,4 +1,5 @@
 
+import { NavLink } from 'react-router-dom';
 import './Paintings.css';
 const Paintings = () => {
   return (
@@ -17,9 +18,9 @@ const Paintings = () => {
                   >
                     Black eye in the darkness 2022
                     <div>
-                      <a href="#painting-blackeye"
-                        >click: 3 pieces in the series</a
-                      >
+                      <NavLink to="/works/paintings/blackeye"
+                        >click: 3 pieces in the series
+                      </NavLink>
                     </div>
                   </div>
                   <img
@@ -38,9 +39,9 @@ const Paintings = () => {
                   >
                     Desert Spirit in the darkness 2022
                     <div>
-                      <a href="#painting-blackeye"
-                        >click: 3 pieces in the series</a
-                      >
+                      <NavLink to="/works/paintings/desertspirit"
+                        >click: 3 pieces in the series
+                    </NavLink>
                     </div>
                   </div>
                   <img

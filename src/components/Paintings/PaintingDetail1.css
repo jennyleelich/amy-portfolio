@@ -1,0 +1,8 @@
+.work-item-sub-inner div {
+  max-width: 60% !important;
+  margin: 20px auto;
+}
+.work-item-sub-inner img {
+  max-width: 60% !important;
+  margin: auto;
+}
