@@ -125,9 +125,9 @@
   max-width: 100%;
 }
 .about .about-content .timeline {
-  background-color: var(--bg-black-100);
+  background-color: #fdf9ff;
   padding: 30px 15px;
-  border: 1px solid var(--bg-black-50);
+  border: 1px solid #e8dfec;
   border-radius: 10px;
   width: 100%;
   position: relative;
@@ -189,4 +189,11 @@
   display: flex;
   align-items: center;
   vertical-align: center;
+}
+
+.education .row {
+  margin-right: 15px !important;
+}
+.experience row {
+  margin-right: 15px !important;
 }

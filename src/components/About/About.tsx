@@ -47,25 +47,6 @@ const About = () => {
                     </p>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="buttons padd-15">
-                    <a
-                      href="#resume"
-                      className="btn downloadResume fa fa-download pb-1"
-                    >
-                      &nbsp;&nbsp;Resume
-                    </a>
-                  </div>
-                  <div className="buttons padd-15">
-                    <a
-                      href="#contact"
-                      data-section-index="1"
-                      className="btn hire-me"
-                    >
-                      Hire Me
-                    </a>
-                  </div>
-                </div>
               </div>
               <div className="skills padd-15">
                 <div className="row">
