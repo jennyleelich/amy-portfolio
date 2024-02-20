@@ -48,19 +48,19 @@ const Navbar = () => {
         `}
         >
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <NavLink to="/" className="py-7 px-3 inline-block">
               HOME
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <NavLink to="/works" className="py-7 px-3 inline-block">
               WORKS
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <NavLink to="/about" className="py-7 px-3 inline-block">
               ABOUT
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
