@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
-import "./PaintingDetail2.css";
+import "./PaintingDetail1.css";
+import Painting1 from "../../images/oneeyelookdownatu 2.jpg";
+import Painting2 from "../../images/onehalfeyelookatu 2.jpg";
+import Painting3 from "../../images/spikyfleurzzzz.jpg";
 
 const PaintingDetail2 = () => {
   return (
@@ -11,7 +14,7 @@ const PaintingDetail2 = () => {
         <div className="row">
           <div className="work-item-sub padd-15">
             <div className="work-item-sub-inner">
-              <img src="/src/assets/onehalfeyelookatu 2.jpg" alt="" />
+              <img src={Painting1} alt="" />
               <div>
                 Everyone who believes that Jesus is the Christ has been born of
                 God, and everyone who loves the Father loves whoever has been
@@ -28,7 +31,7 @@ const PaintingDetail2 = () => {
               </div>
             </div>
             <div className="work-item-sub-inner">
-              <img src="/src/assets/oneeyelookdownatu 2.jpg" alt="" />
+              <img src={Painting2} alt="" />
               <div>
                 Everyone who believes that Jesus is the Christ has been born of
                 God, and everyone who loves the Father loves whoever has been
@@ -45,7 +48,7 @@ const PaintingDetail2 = () => {
               </div>
             </div>
             <div className="work-item-sub-inner">
-              <img src="/src/assets/oneeyelookdownatu.jpg" alt="" />
+              <img src={Painting3} alt="" />
               <div>
                 Everyone who believes that Jesus is the Christ has been born of
                 God, and everyone who loves the Father loves whoever has been

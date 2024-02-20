@@ -1,10 +1,7 @@
-
-
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import Logo from "../../assets/Logo.jpg";
-import { IoMdClose,IoMdMenu } from "react-icons/io";
-
+import Logo from "../../images/Logo.jpg";
+import { IoMdClose, IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -12,11 +9,16 @@ const Navbar = () => {
     <nav className="bg-white">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
-           <NavLink to="/" className="py-7 px-3 inline-block">
-            <img src={Logo} alt="logo" className="md:cursor-pointer h-9 inline px-2" />Chuhan
+          <NavLink to="/" className="py-7 px-3 inline-block">
+            <img
+              src={Logo}
+              alt="logo"
+              className="md:cursor-pointer h-9 inline px-2"
+            />
+            Chuhan
           </NavLink>
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
-            {open&& <IoMdClose />}
+            {open && <IoMdClose />}
             {!open && <IoMdMenu />}
           </div>
         </div>
@@ -37,7 +39,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        
+
         {/* Mobile nav */}
         <ul
           className={`
@@ -60,7 +62,6 @@ const Navbar = () => {
               ABOUT
             </Link>
           </li>
-          
         </ul>
       </div>
     </nav>
