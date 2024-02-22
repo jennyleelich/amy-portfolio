@@ -1,0 +1,4 @@
+.custom-collaps {
+  z-index: 2;
+  bottom: calc(100vh - 280px) !important;
+}

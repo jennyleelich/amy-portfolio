@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../../images/Logo.jpg";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,10 @@ const Navbar = () => {
             />
             Chuhan
           </NavLink>
-          <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
+          <div
+            className="text-3xl md:hidden mt-4"
+            onClick={() => setOpen(!open)}
+          >
             {open && <IoMdClose />}
             {!open && <IoMdMenu />}
           </div>
@@ -43,22 +47,34 @@ const Navbar = () => {
         {/* Mobile nav */}
         <ul
           className={`
-        md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+        md:hidden bg-white fixed w-full top-5 overflow-y-hidden bottom-0 py-24 pl-4 custom-collaps
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
           <li>
-            <NavLink to="/" className="py-7 px-3 inline-block">
+            <NavLink
+              to="/"
+              className="py-4 px-6 inline-block"
+              onClick={() => setOpen(!open)}
+            >
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/works" className="py-7 px-3 inline-block">
+            <NavLink
+              to="/works"
+              className="py-4 px-6 inline-block"
+              onClick={() => setOpen(!open)}
+            >
               WORKS
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="py-7 px-3 inline-block">
+            <NavLink
+              to="/about"
+              className="py-4 px-6 inline-block"
+              onClick={() => setOpen(!open)}
+            >
               ABOUT
             </NavLink>
           </li>
